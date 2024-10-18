@@ -1,0 +1,160 @@
+/* Algemeen */
+body {
+  font-family: "Lato", sans-serif;
+  background: linear-gradient(
+    to right,
+    #2d455d,
+    #e6e6e6
+  ); /* Zachte kleurovergang */
+  color: #2c3e50; /* Donkerblauw voor tekst */
+  margin: 15px;
+  padding: 10px;
+}
+
+/* Header */
+header {
+  background-color: #2980b9; /* Donkerblauw */
+  background-image: url("Dark.jpg"); /* Achtergrondafbeelding */
+  background-size: cover;
+  background-position: auto;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schaduw voor diepte */
+  color: #ffffff; /* Witte tekst header */
+  background-size: 30% fixed;
+}
+
+/* Titels */
+h1 {
+  color: #fbfbfb; /* Wit voor mijn naam */
+}
+
+h2 {
+  font-size: 24px;
+  color: #2980b9; /* Donkerblauw voor subtitels */
+  font-weight: 700; /* Dikker lettertype */
+  margin-bottom: 15px;
+}
+
+/* Secties */
+section {
+  margin: 20px auto; /* Centreren met auto marges */
+  padding: 20px;
+  border: 1px solid #bdc3c7; /* Lichtgrijs voor secties */
+  border-radius: 10px; /* Ronde hoeken voor secties */
+  background-color: #ffffff; /* Witte achtergrond voor secties */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lichte schaduw voor secties */
+}
+
+section:hover {
+  transform: translateY(-5px); /* Lichte omhoog beweging */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Dieper schaduw effect */
+  transition: all 0.3s ease; /* Vloeiende animatie */
+}
+
+/* Links */
+a {
+  color: #ffffff; /* Witte kleur voor links */
+  text-decoration: none; /* Verwijder onderlijning */
+}
+
+a:hover {
+  text-decoration: underline; /* Onderlijning bij hover */
+  color: #024509; /* Donkerder goudkleur bij hover */
+}
+
+/* Knoppen */
+button {
+  background-color: #2980b9; /* Donkerblauw */
+  color: #ffffff; /* Wit */
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px; /* Ronde hoeken voor knoppen */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lichte schaduw */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Animaties */
+}
+
+button:hover {
+  background-color: #3498db; /* Lichtere blauw bij hover */
+  transform: scale(1.05); /* Vergroten bij hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Dieper schaduw bij hover */
+}
+
+/* Voettekst */
+footer {
+  background-color: #2980b9; /* Donkerblauw */
+  background-image: url("360_F_798130360_KWo9VbsMsA1OsV0CYBx5t4IwdJuJqC4v.jpg");
+  color: #ffffff; /* Wit */
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%; /* Voettekst over de volle breedte */
+}
+
+
+/* Responsiviteit */
+@media (max-width: 768px) {
+  header {
+    font-size: 18px; 
+    padding: 15px; 
+  }
+}
+
+section {
+  padding: 15px;
+}
+
+button {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+/* Navigatiebalk uitlijnen */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #8080a3;
+}
+
+/* Stijling voor de 'Over Mij' sectie */
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.about-image {
+  width: 150px;
+  height: auto;
+  border-radius: 50%; /* Maakt de afbeelding rond */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Lichte schaduw voor diepte */
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Stapel afbeelding en tekst onder elkaar op kleinere schermen */
+    text-align: center;
+  }
+
+  .about-image {
+    width: 100px; /* Maak de afbeelding iets kleiner op kleine schermen */
+  }
+}

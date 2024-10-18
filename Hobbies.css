@@ -1,0 +1,145 @@
+/* Algemeen */
+body {
+  font-family: "Lato", sans-serif;
+  background: linear-gradient(
+    to right,
+    #2d455d,
+    #e6e6e6
+  ); /* Zachte kleurovergang */
+  color: #2c3e50; /* Donkerblauw voor tekst */
+  margin: 15px;
+  padding: 10px;
+}
+/* Header */
+header {
+  background-color: #2980b9; /* Donkerblauw */
+  background-image: url("Dark.jpg"); /* Achtergrondafbeelding */
+  background-size: cover;
+  background-position: auto;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schaduw voor diepte */
+  color: #ffffff; /* Witte tekst header */
+}
+
+/* Links */
+a {
+  color: #ffffff; /* Witte kleur voor links */
+  text-decoration: none; /* Verwijder onderlijning */
+}
+
+a:hover {
+  text-decoration: underline; /* Onderlijning bij hover */
+  color: #024509; /* Donkerder kleur bij hover */
+}
+
+/* Sectie titels */
+h2 {
+  color: #2980b9; /* Donkerblauw voor titels */
+  font-size: 22px; /* Iets grotere titels */
+  margin-bottom: 20px;
+  text-decoration: underline; /* Onderlijning */
+}
+
+/* Secties */
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #ffffff; /* Witte achtergrond voor secties */
+  border-radius: 8px; /* Ronde hoeken voor secties */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lichte schaduw voor secties */
+}
+
+
+/* Lijsten */
+ul {
+  list-style-type: disc; /* Gebruik standaard opsommingstekens */
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Responsiviteit */
+@media (max-width: 768px) {
+  header {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  img {
+    max-width: 100%; 
+  }
+}
+
+/* Navigatiebalk uitlijnen */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #8080a3;
+}
+
+.content-container {
+  display: flex; /* Flexbox gebruiken om de inhoud naast elkaar te plaatsen */
+  align-items: center; /* Center de items verticaal */
+  gap: 20px; /* Ruimte tussen tekst en afbeelding */
+  padding: 20px; /* Padding voor de container */
+  background-color: #f0f0f0; /* Lichtgrijze achtergrond voor de container */
+  border-radius: 10px; /* Ronde hoeken voor de container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schaduw voor diepte */
+}
+
+.dog {
+  width: 150px; /* Breedte van de afbeelding */
+  height: auto; /* Hoogte automatisch instellen om aspect ratio te behouden */
+  border-radius: 10px; /* Ronde hoeken voor de afbeelding */
+}
+
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.duik {
+  width: 150px;
+  height: auto;
+  border-radius: 10px; 
+}
+
+/* Responsiviteit voor de duikcontainer */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column; /* Stapel de afbeelding en tekst onder elkaar */
+    text-align: center; /* Zorg ervoor dat de tekst gecentreerd wordt */
+  }
+
+  .dive-image {
+    width: 100%; /* Zorg ervoor dat de afbeelding de volle breedte neemt */
+    max-width: 300px; /* Optioneel: stel een maximum breedte in voor de afbeelding */
+  }
+}

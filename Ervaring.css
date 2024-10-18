@@ -1,0 +1,75 @@
+/* Algemeen */
+body {
+  font-family: "Lato", sans-serif;
+  background: linear-gradient(
+    to right,
+    #2d455d,
+    #e6e6e6
+  ); /* Zachte kleurovergang */
+  color: #2c3e50; /* Donkerblauw voor tekst */
+  margin: 15px;
+  padding: 10px;
+}
+
+/* Header */
+header {
+  background-color: #2980b9; /* Donkerblauw */
+  background-image: url("Dark.jpg"); /* Achtergrondafbeelding */
+  background-size: cover;
+  background-position: auto;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schaduw voor diepte */
+  color: #ffffff; /* Witte tekst header */
+}
+
+/* Sectie titels */
+h2 {
+  color: #2980b9; /* Donkerblauw voor titels */
+  font-size: 24px; /* Iets grotere titels */
+  margin-bottom: 15px;
+  text-decoration: underline; /* Onderlijning voor sectietitels */
+}
+
+/* Secties */
+section {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #bdc3c7; /* Lichtgrijs voor secties */
+  border-radius: 10px; /* Ronde hoeken voor secties */
+  background-color: #ffffff; /* Witte achtergrond voor secties */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lichte schaduw voor secties */
+}
+
+/* Responsiviteit */
+@media (max-width: 768px) {
+  header {
+    font-size: 18px; /* Grotere leesbaarheid op kleinere schermen */
+    padding: 15px; /* Iets minder padding */
+  }
+
+  section {
+    padding: 15px; /* Minder padding op kleinere schermen */
+  }
+}
+
+/* Navigatiebalk uitlijnen */
+nav ul {
+  list-style: none; /* Verwijder standaard opsommingstekens */
+  padding: 0;
+}
+
+nav ul li {
+  display: inline; /* Horizontale navigatie */
+  margin-right: 20px; /* Ruimte tussen links */
+}
+
+nav ul li a {
+  color: #ffffff; /* Witte kleur voor navigatielinks */
+  text-decoration: none; /* Verwijder onderlijning */
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #8080a3;
+}

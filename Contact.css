@@ -1,0 +1,132 @@
+/* Algemeen */
+body {
+  font-family: "Lato", sans-serif;
+  background: linear-gradient(
+    to right,
+    #2d455d,
+    #e6e6e6
+  ); /* Zachte kleurovergang */
+  color: #2c3e50; /* Donkerblauw voor tekst */
+  margin: 15px;
+  padding: 10px;
+}
+
+/* Header */
+header {
+  background-color: #2980b9; /* Donkerblauw */
+  background-image: url("Dark.jpg"); /* Achtergrondafbeelding */
+  background-size: cover;
+  background-position: auto;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schaduw voor diepte */
+  color: #ffffff; /* Witte tekst header */
+}
+
+/* Links */
+a {
+  color: #252424; /* Witte kleur voor links */
+  text-decoration: none; /* Verwijder onderlijning */
+}
+
+a:hover {
+  text-decoration: underline; /* Onderlijning bij hover */
+  color: #024509; /* Donkerder kleur bij hover */
+}
+
+/* Sectie titels */
+h2,
+h3 {
+  color: #2980b9; /* Donkerblauw voor titels */
+  font-size: 22px; /* Iets grotere titels */
+  margin-bottom: 20px;
+  text-decoration: underline; /* Onderlijning */
+}
+
+/* Secties */
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #ffffff; /* Witte achtergrond voor secties */
+  border-radius: 8px; /* Ronde hoeken voor secties */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lichte schaduw voor secties */
+}
+
+/* Formulier */
+form {
+  margin-top: 20px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #bdc3c7;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inward shadow for input fields */
+}
+
+input[type="submit"] {
+  background-color: #2980b9;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #3498db;
+}
+
+/* Responsiviteit */
+@media (max-width: 768px) {
+  header {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 8px;
+  }
+
+  input[type="submit"] {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* Navigatiebalk uitlijnen */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #8080a3;
+}
